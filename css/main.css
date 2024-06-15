@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: bisque;
+  font-family: "Montserrat", sans-serif;
+  color: black
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  
+}
+
+/* ============ Header START ============= */
+.rect-block {
+  background: url(../img/polyg-rect.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  color: green;
+}
+
+.navbar-nav { 
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.nav-item a {
+  font-size: 20px;
+  transition: all .5s;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-item a:hover {
+  color: blue;
+  scale: 1.1;
+}
+
+
+/* ============ Header END ============= */
+
+/* ============ First-section START ============= */
+
+.first-section {
+  background-color: rgb(126, 172, 156);
+  padding: 30px 0;
+}
+
+.old-price {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: line-through;
+  
+}
+.new-price {
+  font-size: 42px;
+  font-weight: 700;
+  color: brown;
+}
+
+.first-section .right-side {
+  position: relative;
+}
+
+.right-side-price {
+  position: absolute;
+  top: 78px;
+  right: 56px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section-row {
+  align-items: center;
+}
+.left-side-text {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.left-side-title {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.first-section-btn {
+  padding: 10px 20px;
+  background-color: chocolate;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.first-section-btn:hover {
+  background-color: green;
+  color: gold;
+}
+
+/* ============ First-section END ============= */
+
+/* ============ Delivery START ============= */
+
+.delivery-section {
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+
+.delivery-section-first-line {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.delivery-section-first-line span {
+  font-weight: 400;
+  color: aquamarine;
+}
+.delivery-section-second-line {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* ============ Delivery END ============= */
+
+/* ============ Collections START ============= */
+
+.collections-section {
+  background-color: rgb(109, 78, 137);
+  padding: 30px 0;
+  color: gold;
+}
+
+.collections-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+  background-color: brown;
+}
+
+.card-row {
+  align-items: center;
+}
+
+.collections-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.collections-card-title span {
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: aquamarine;
+}
+.collections-card-text {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.coll-btn {
+  padding: 2px 20px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  transition: all .5s;
+}
+
+.coll-btn:hover {
+  background-color: green;
+  color: gold;
+}
+
+/* ============ Collections END ============= */
+
+/* ============ New models START ============= */
+
+.new-models-section {
+  background-color: aquamarine;
+  padding: 30px 0 50px 0;
+  
+}
+
+.models-card {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid brown;
+  border-radius: 20px;
+}
+
+.models-card-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.models-card-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: brown;
+}
+
+.models-btn {
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+.models-btn:hover {
+  background-color: green;
+  color: gold;
+}
+
+
+
+/* ============ New models END ============= */
+
+/* ============ Footer START ============= */
+
+.footer-section {
+  background-color: black;
+  padding: 50px 0;
+  color: gold;
+}
+
+.footer-content {
+  padding: 20px 0;
+  
+  
+}
+
+.foot-logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.foot-logo {
+  margin-right: 50px;
+}
+
+.items-col a {
+  color: gold;
+}
+
+.foot-items-block {
+  gap: 150px;
+}
+
+.foot-items-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.foot-item a {
+  color: gold;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.new-models-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+}
+
+/* ============ Footer END ============= */
+
+
+/* ============ Last-section START ============= */
+
+.last-section {
+  background-color: green;
+  
+  padding: 20px 0;
+}
+
+.last-section-content {  
+  color: gold; 
+}
+
+/* ============ Last-section END ============= */
+
+
+@media (max-width: 768px) {
+  .right-side-price {
+    top: 40px;
+    right: 40px;
+  }
+
+}
